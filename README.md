@@ -1,12 +1,10 @@
 # HTTP Downloader Resume and Retry
 
-[![Build Status](https://travis-ci.org/techblogon/http-downloader.svg?branch=master)](https://travis-ci.org/techblogon/http-downloader)
-
 HTTP Downloader with resume and retry logic. Target HTTP has to support `Range` in request header. This repo has both of `java net` and `java apache http client` implementations.
 
 ## Quick start
 
-1.  Change File download URL, file name and size in test file of [FileDownloaderTest.java](./src/test/java/com/techblogon/httpdownloader/FileDownloaderTest.java) and [FileDownloaderApacheTest.java](./src/test/java/com/techblogon/httpdownloader/FileDownloaderApacheTest.java)
+1.  Change File download URL, file name and size in test file of [FileDownloaderTest.java](./src/test/java/com/example/FileDownloaderTest.java) and [FileDownloaderHttpClientTest.java](./src/test/java/com/example/FileDownloaderHttpClientTest.java)
 
 ```java
     long FILE_SIZE = 104857602L;
