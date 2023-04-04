@@ -32,3 +32,17 @@ Below `offset` variable should be declared as `Long` in case of supporting large
         }
 ```
 
+## cURL
+
+1. Try to use `--retry` and `--retry-max-time` to retry download and `-C` to resume download
+
+```bash
+curl -L -O --retry 3 --retry-max-time 0 -C - http://url
+
+```
+
+2. If specify `Range` in request header, it will download the file from the new offset
+
+```bash
+curl -O -C --retry 3 - -L -J -H "Range: bytes=<offset>-" "your blob url"
+```
