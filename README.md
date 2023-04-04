@@ -1,4 +1,6 @@
-# HTTP Downloader
+# HTTP Downloader Resume and Retry
+
+[![Build Status](https://travis-ci.org/techblogon/http-downloader.svg?branch=master)](https://travis-ci.org/techblogon/http-downloader)
 
 HTTP Downloader with resume and retry logic. Target HTTP has to support `Range` in request header. This repo has both of `java net` and `java apache http client` implementations.
 
